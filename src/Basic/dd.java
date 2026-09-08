@@ -1,24 +1,30 @@
 package Basic;
 
-import java.lang.reflect.Array;
-import java.util.Arrays;
-
 public class dd {
     public static void main(String[] args) {
-        int[] answer = {};
-        int k = 3;
-        int [] arr = {1,3,5,6};
-        if (k % 2 == 1) {
+        int answer = 0;
 
-            for (int i = 0; i < k; i++) {
-                answer = new int[]{arr[i] * k};
-                System.out.println(answer);
+        String control = "wsdawsdassw";
+
+        for (int i =0; i <control.length() ; i++) {
+            switch (control.charAt(i)) {
+                case 'w':
+                    answer ++;
+                    break;
+                case 's':
+                    answer --;
+                    break;
+                case 'd':
+                    answer +=10;
+                    break;
+                case 'a':
+                    answer -=10;
+                    break;
+                default:
+                    break;
             }
+        }
 
-        } else
-            for (int j = 0; j < k; j++) {
-                answer = new int[]{arr[j] + k};
-            }
-
+        System.out.println(answer);  // 결과 출력!
     }
 }
