@@ -4,17 +4,9 @@ import java.util.Arrays;
 
 public class dd {
     public static void main(String[] args) {
-        int answer = 0;
-        String myString = "AbCdEfG";
-        String pat = "aBc";
+        String answer = "He110W0r1d";
+        int n = 5;
 
-        if (myString.contains(pat)) {
-            if(myString.equals(pat)) {
-
-            }
-            System.out.println(1);
-        } else
-            System.out.println(0);
+        System.out.println(answer.substring(answer.length()-n));
     }
 }
-
