@@ -4,14 +4,24 @@ import java.util.Arrays;
 
 public class dd {
     public static void main(String[] args) {
-        int[] num_list = new int[]{5, 4, 3, 2, 1, 7, 8};
+        int sum = 1;
+        int sum1 = 0;
+        int [] num_list = {1,2,3,4,5};
 
-        Arrays.sort(num_list);
+        for (int i = 0; i <num_list.length ; i++) {
+            sum *= num_list[i];
 
-        int[] answer = Arrays.stream(num_list)
-                .limit(5)
-                .toArray();
+        }
+        System.out.println(sum);
 
-        System.out.println(answer.toString());
+        for (int i = 0; i <num_list.length ; i++) {
+            sum1+= num_list[i];
+        }
+        int result = sum1 * sum1;
+        System.out.println(result);
+        if (sum > result) {
+            System.out.println(1);
+        }
+
     }
 }
