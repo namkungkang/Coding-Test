@@ -4,9 +4,18 @@ import java.util.Arrays;
 
 public class dd {
     public static void main(String[] args) {
-        String answer = "He110W0r1d";
-        int n = 5;
+        int a = 2;
+        int b = 91;
+        String str = String.valueOf(a);
+        String str1 = String.valueOf(b);
 
-        System.out.println(answer.substring(answer.length()-n));
+        int answer = Integer.parseInt(str + str1);
+        int answer1 = Integer.parseInt(str) * Integer.parseInt(str1) ;
+        if (answer >= 2 * answer1) {
+            System.out.println(answer);
+
+        }else
+            System.out.println(answer1 * 2);
     }
+
 }
