@@ -4,16 +4,17 @@ import java.util.Arrays;
 
 public class dd {
     public static void main(String[] args) {
-        String[] strArr = {"aaa","BBB","ccc","DDD"};
-        String[] answer = new String[strArr.length];
+        int answer = 0;
+        String myString = "AbCdEfG";
+        String pat = "aBc";
 
-        for (int i = 0; i <strArr.length ; i++) {
-            if (i % 2== 0) {
-                answer[i] = strArr[i].toUpperCase();
-            } else answer[i] = strArr[i].toLowerCase();
+        if (myString.contains(pat)) {
+            if(myString.equals(pat)) {
 
-        }
-
-        System.out.println(Arrays.toString(answer));
+            }
+            System.out.println(1);
+        } else
+            System.out.println(0);
     }
 }
+
