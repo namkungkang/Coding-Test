@@ -1,10 +1,7 @@
 package Basic;
 
-import java.util.Arrays;
-
-public class dd {
-    public static void main(String[] args) {
-        String[] strArr = {"aaa","BBB","ccc","DDD"};
+class LetterCase {
+    public String[] LetterCase(String[] strArr) {
         String[] answer = new String[strArr.length];
 
         for (int i = 0; i <strArr.length ; i++) {
@@ -14,6 +11,7 @@ public class dd {
 
         }
 
-        System.out.println(Arrays.toString(answer));
+
+        return answer;
     }
 }
