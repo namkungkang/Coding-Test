@@ -4,18 +4,14 @@ import java.util.Arrays;
 
 public class dd {
     public static void main(String[] args) {
-        int a = 2;
-        int b = 91;
-        String str = String.valueOf(a);
-        String str1 = String.valueOf(b);
+        int answer = 0;
+        String str1 = "aabcc";
+        String str2 = "";
 
-        int answer = Integer.parseInt(str + str1);
-        int answer1 = Integer.parseInt(str) * Integer.parseInt(str1) ;
-        if (answer >= 2 * answer1) {
-            System.out.println(answer);
+        if (str1.contains(str2)) {
+            System.out.println(1);
+        }
 
-        }else
-            System.out.println(answer1 * 2);
+        else System.out.println(0);
     }
-
 }
