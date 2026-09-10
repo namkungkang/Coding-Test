@@ -4,14 +4,11 @@ import java.util.Arrays;
 
 public class dd {
     public static void main(String[] args) {
-        int answer = 0;
-        String str1 = "aabcc";
-        String str2 = "";
+        String my_string = "i love you";
+        String[] answer = my_string.split(" ");
 
-        if (str1.contains(str2)) {
-            System.out.println(1);
-        }
+        System.out.println(Arrays.toString(answer));
 
-        else System.out.println(0);
+
     }
 }
