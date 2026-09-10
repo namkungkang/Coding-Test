@@ -5,15 +5,17 @@ import java.util.Arrays;
 
 public class dd {
     public static void main(String[] args) {
-        int answer = 0;
-        String num_str = "123456789";
+        int index = 0 ;
+        int [] num_list = {2,1,6};
+        int n = 3;
+        int size = num_list.length - n + 1;
+        int[] answer = new int[size];
 
-
-        for (int i = 0; i <num_str.length(); i++) {
-            answer += Integer.parseInt(String.valueOf(num_str.charAt(i)));
-
+        for (int i = 0 ; i <size; i++) {
+            answer[index++]+=num_list[i+n-1];
         }
 
-        System.out.println(answer);
+
+        System.out.println(Arrays.toString(answer));
     }
 }
