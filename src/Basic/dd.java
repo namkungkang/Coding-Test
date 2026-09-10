@@ -5,17 +5,13 @@ import java.util.Arrays;
 
 public class dd {
     public static void main(String[] args) {
-        int index = 0 ;
-        int [] num_list = {2,1,6};
-        int n = 3;
-        int size = num_list.length - n + 1;
-        int[] answer = new int[size];
+        String answer = "zpiaz";
+        String aa= "";
+        int[] index_list = {1, 2, 0, 0, 3};
 
-        for (int i = 0 ; i <size; i++) {
-            answer[index++]+=num_list[i+n-1];
+        for (int i = 0; i < index_list.length; i++) {
+            aa += answer.charAt(index_list[i]);
         }
-
-
-        System.out.println(Arrays.toString(answer));
+        System.out.println(aa);
     }
-}
+    }
