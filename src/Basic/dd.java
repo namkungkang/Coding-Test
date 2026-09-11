@@ -1,29 +1,23 @@
 package Basic;
 
 import javax.swing.*;
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 public class dd {
     public static void main(String[] args) {
-        int[] arr = {5, 1, 4};
-        int size =0;
+        List<Integer> answer = new ArrayList<>();
+        int[] num_list = {2, 1, 6};
 
-        for (int i = 0; i <arr.length ; i++) {
-            size = size + arr[i];
+        for (int i = 0; i < num_list.length; i++) {
+            answer.add(num_list[i]);
         }
+        if (num_list[num_list.length - 1] > num_list[num_list.length - 2]) {
+            answer.add(num_list[num_list.length - 1] - num_list[num_list[num_list.length - 2]]);
+        } else answer.add(num_list[num_list.length - 1] * 2);
 
-        int [] answer = new int[size];
+        System.out.println(answer);
+    }
 
-        int index =0;
-
-        for(int j = 0; j<arr.length; j++) {
-                for (int k =0; k<arr[j]; k++ ) {
-                    answer[index++] = arr[j];
-
-            }
-        }
-
-        System.out.println(Arrays.toString(answer));
-
-
-    }}
+}

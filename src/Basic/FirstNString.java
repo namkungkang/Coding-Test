@@ -2,8 +2,8 @@ package Basic;
 
 
 
-class Solution {
-    public String solution(String my_string, int n) {
+class FirstNString {
+    public String FirstNString(String my_string, int n) {
 
 
         return my_string.substring(0,n);
