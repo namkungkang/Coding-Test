@@ -1,25 +1,22 @@
 package Basic;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class dd {
     public static void main(String[] args) {
+        int[] answer = {12, 4, 15, 46, 38, 1, 14, 56, 32, 10};
 
         List<Integer> list = new ArrayList<>();
-        int[] arr = {293, 1000, 395, 678, 94};
-        int[] delete_list = {94, 777, 104, 1000, 1, 12};
 
-        for (int i = 0; i <arr.length ; i++) {
-                list.add(arr[i]);
-        }
-        for (int i = 0; i <delete_list.length ; i++) {
-                list.remove(Integer.valueOf(delete_list[i]));
+        Arrays.sort(answer);
+
+
+        for (int i = 5; i <answer.length ; i++) {
+            list.add(answer[i]);
         }
 
+        System.out.println(list );
 
-
-        System.out.println(list);
-
-    }
-    }
+    }}
