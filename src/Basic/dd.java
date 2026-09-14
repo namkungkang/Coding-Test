@@ -6,20 +6,18 @@ import java.util.Arrays;
 
 public class dd {
     public static void main(String[] args) {
-    String myString = "ABBAA";
-    String pat = "AABB";
-    String answer = "";
-
-        for (int i = 0; i <myString.length() ; i++) {
-            if (myString.charAt(i) == 'A') {
-                answer+="B";
-            }
-            else answer+="A";
+        int answer = 0;
+        String op = "";
+        S
+        switch (op) {
+            case "*" :
+                return Integer.parseInt(binomial) * Integer.parseInt(binomial);
+            case "+":
+                return Integer.parseInt(binomial)+Integer.parseInt(binomial);
+            case "-" :
+                return Integer.parseInt(binomial)-Integer.parseInt(binomial);
 
         }
-       if (answer.contains(pat)) {
-           System.out.println(1);
-       }
-       else System.out.println(0);
+        return answer;
     }
 }
