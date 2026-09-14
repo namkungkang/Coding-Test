@@ -1,12 +1,9 @@
 package Basic;
 
-
 import java.util.Arrays;
 
-public class dd {
-    public static void main(String[] args) {
-        int [] arr ={49, 12, 100, 276, 33};
-        int  n = 27;
+class ArrayLengthDifferentOperation {
+    public int[] ArrayLengthDifferentOperation(int[] arr, int n) {
         if(arr.length % 2 != 0){
             for(int i = 0; i < arr.length; i += 2){
                 arr[i] += n;
@@ -17,7 +14,7 @@ public class dd {
                 arr[i] += n;
             }
         }
-        System.out.println(Arrays.toString(arr));
 
+        return arr;
     }
 }
