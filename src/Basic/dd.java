@@ -5,22 +5,17 @@ import java.util.Arrays;
 
 public class dd {
     public static void main(String[] args) {
-
-        int[] arr = {1, 2, 3, 100, 99, 98} ;
-        int size = arr.length;
-        int[] answer = new int[size];
-        int index =0;
-
-        for (int i = 0; i <arr.length ; i++) {
-            if (arr[i] > 50 && arr[i] % 2 == 0) {
-                arr[i] = arr[i] / 2;
-            } else if (arr[i] <50 && arr[i] % 2 == 1) {
-                arr[i] = arr[i] * 2;
-            }
+        int[] numbers = {34, 5, 71, 29, 100, 34};
+        int n = 123;
+        int answer = 0;
+        for (int i = 0; i <numbers.length ; i++) {
+            answer += numbers[i];
+            if (answer > n) {
+                break;
+         }
         }
 
 
-        System.out.println(Arrays.toString(arr));
+        System.out.println(answer);
 
-    }
-}
+    }}
