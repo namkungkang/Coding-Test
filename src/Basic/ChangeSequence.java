@@ -1,14 +1,11 @@
 package Basic;
 
 
-import java.util.ArrayList;
 import java.util.Arrays;
 
-public class dd {
-    public static void main(String[] args) {
-        int [] num_list =  {2, 1, 6};
+class ChangeSequence {
+    public int[] ChangeSequence(int[] num_list, int n) {
         int size = num_list.length;
-        int n = 1;
         int[] answer = new int[size];
         int index = 0;
 
@@ -20,6 +17,6 @@ public class dd {
         for (int i = 0; i < n; i++) {
             answer[index++] = num_list[i];
         }
-        System.out.println(Arrays.toString(answer));
+        return answer;
     }
 }
