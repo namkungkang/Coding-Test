@@ -3,26 +3,17 @@ package Basic;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
 
-public class dd {
-    public static void main(String[] args) {
-
-        String[] strArr = {"and","notad","abcd"};
+class RemoveAd {
+    public ArrayList<String> RemoveAd(String[] strArr) {
         ArrayList<String> list = new ArrayList<>(Arrays.asList(strArr));
 
-        for (int i = 0; i <strArr.length ; i++) {
+        for (int i = 0; i < strArr.length; i++) {
             if (strArr[i].contains("ad")) {
                 list.remove(strArr[i]);
             }
-
         }
-
-        System.out.println(list);
-
-
-
-
-
+        return list;
     }
+
 }
