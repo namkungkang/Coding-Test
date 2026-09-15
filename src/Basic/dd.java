@@ -7,13 +7,14 @@ import java.util.List;
 
 public class dd {
     public static void main(String[] args) {
-        String myString = "dxccxbbbxaaaa";
-        String [] answer = myString.split("x");
-        Arrays.sort(answer);
+        int index = 0;
+        String myString = "oxooxoxxox";
+        String[] arr = myString.split("x",-1);
+        int[] answer = new int[arr.length];
+        for (int i = 0; i <arr.length ; i++) {
+                answer[index++] = arr[i].length();
+        }
         System.out.println(Arrays.toString(answer));
 
-        }
-
-
-
     }
+}
