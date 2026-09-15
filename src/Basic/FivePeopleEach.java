@@ -1,12 +1,8 @@
 package Basic;
 
 
-import java.util.ArrayList;
-import java.util.Arrays;
-
-public class dd {
-    public static void main(String[] args) {
-        String[] names = {"nami", "ahri", "jayce"};
+class FivePeopleEach {
+    public String[] FivePeopleEach(String[] names) {
         int size = names.length / 5;
         if(names.length % 5 != 0){
             size += 1;
@@ -17,7 +13,7 @@ public class dd {
             answer[index++] = names[i];
         }
 
-        System.out.println(Arrays.toString(answer));
+        return answer;
 
     }
 }
