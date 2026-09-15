@@ -8,21 +8,11 @@ import java.util.List;
 public class dd {
     public static void main(String[] args) {
 
-        String[] strArr = {"and","notad","abcd"};
-        ArrayList<String> list = new ArrayList<>(Arrays.asList(strArr));
-
-        for (int i = 0; i <strArr.length ; i++) {
-            if (strArr[i].contains("ad")) {
-                list.remove(strArr[i]);
-            }
-
-        }
-
-        System.out.println(list);
-
-
-
+        String answer = "";
+        String myString ="abstract algebra";
+        System.out.println(myString.toLowerCase().replace('a','A'));
 
 
     }
-}
+
+    }
