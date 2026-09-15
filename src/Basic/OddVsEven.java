@@ -1,14 +1,9 @@
 package Basic;
 
-
-import java.util.ArrayList;
-import java.util.Arrays;
-
-public class dd {
-    public static void main(String[] args) {
+class OddVsEven {
+    public int OddVsEven(int[] num_list) {
         int answer = 0;
-        int answer1= 0;
-        int [] num_list = {-1, 2, 5, 6, 3};
+        int answer1= 1;
 
         for (int i = 0; i <num_list.length ; i+=2) {
             answer += num_list[i];
@@ -17,8 +12,8 @@ public class dd {
             answer1 += num_list[i];
         }
         if (answer > answer1) {
-            System.out.println(answer);
-        } else System.out.println(answer1);
+            return answer;
+        } else return  answer1;
 
     }
 }
