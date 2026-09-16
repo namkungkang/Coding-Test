@@ -7,13 +7,15 @@ import java.util.Arrays;
 
 public class dd {
     public static void main(String[] args) {
-        int arr[] = {0, 0, 0, 1};
-        int idx = 1;
+        int size = 8;
+        int start_num = 10;
+        int[] answer = new int[size];
+        int index = 0;
 
-        for (int i = idx; i <arr.length ; i++) {
-            if (idx == arr[i]) {
-                System.out.println(i);
-            }
+        for (int i = 10; i > start_num-size; i--) {
+            answer[index++] = i;
         }
+
+        System.out.println(Arrays.toString(answer));
     }
 }
