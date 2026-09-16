@@ -7,15 +7,13 @@ import java.util.Arrays;
 
 public class dd {
     public static void main(String[] args) {
-        int[] arr = {1, 2, 3, 4, 5};
-        int[][] intervals = {{1, 3},{0,4}};
-        ArrayList<Integer> list = new ArrayList<>();
+        int arr[] = {0, 0, 0, 1};
+        int idx = 1;
 
-        for (int i = 0; i <intervals.length ; i++) {
-            for (int j = intervals[i][0]; j <=intervals[i][1] ; j++) {
-                list.add(arr[j]);
+        for (int i = idx; i <arr.length ; i++) {
+            if (idx == arr[i]) {
+                System.out.println(i);
             }
         }
-        System.out.println(list);
     }
 }
