@@ -1,14 +1,10 @@
 package Basic;
 
 
-import javax.swing.*;
 import java.util.ArrayList;
-import java.util.Arrays;
 
-public class dd {
-    public static void main(String[] args) {
-        int[] arr = {1, 2, 3, 4, 5};
-        int[][] intervals = {{1, 3},{0,4}};
+class MakeArray {
+    public ArrayList<Integer> MakeArray(int[] arr, int[][] intervals) {
         ArrayList<Integer> list = new ArrayList<>();
 
         for (int i = 0; i <intervals.length ; i++) {
@@ -16,6 +12,7 @@ public class dd {
                 list.add(arr[j]);
             }
         }
-        System.out.println(list);
+    return list;
+
     }
 }
