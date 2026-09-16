@@ -7,15 +7,20 @@ import java.util.Arrays;
 
 public class dd {
     public static void main(String[] args) {
-        String answer = "";
-        int c = 2;
-        int m = 4;
-        String my_string = "ihrhbakrfpndopljhygc";
+        int answer = 0;
+        String srr = "";
+        String my_string = "banana";
+        for (int i = 0; i <my_string.length() ; i++) {
 
-        for (int i = c-1; i <my_string.length() ; i+=m) {
-            answer+=my_string.charAt(i);
+            srr+=my_string.charAt(i);
+
         }
 
-        System.out.println(answer);
+        if (srr.contains(srr)) {
+            System.out.println(1);
+        }
+
+
+
     }
 }
