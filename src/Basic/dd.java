@@ -7,15 +7,15 @@ import java.util.Arrays;
 
 public class dd {
     public static void main(String[] args) {
-        int size = 8;
-        int start_num = 10;
-        int[] answer = new int[size];
-        int index = 0;
+        String answer = "";
+        int c = 2;
+        int m = 4;
+        String my_string = "ihrhbakrfpndopljhygc";
 
-        for (int i = 10; i > start_num-size; i--) {
-            answer[index++] = i;
+        for (int i = c-1; i <my_string.length() ; i+=m) {
+            answer+=my_string.charAt(i);
         }
 
-        System.out.println(Arrays.toString(answer));
+        System.out.println(answer);
     }
 }
