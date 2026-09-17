@@ -5,17 +5,17 @@ import javax.swing.*;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-
 public class dd {
     public static void main(String[] args) {
 
-    String number = "123";
-    int sum = 0;
-
-//        System.out.println(Integer.parseInt(number));
-
-        for (int i = 0; i <number.length() ; i++) {
-            sum += Integer.parseInt(String.valueOf(number.charAt(i)));
+        ArrayList<Integer> list = new ArrayList<>();
+        int n = 10;
+        list.add(n);
+        while (n>1) {
+            n = n % 2 ==0 ? n/2 : n*3 + 1;
+            list.add(n);
         }
-        System.out.println(sum % 9);
+
+
+        System.out.println(list);
     }}
