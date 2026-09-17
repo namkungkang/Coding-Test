@@ -1,37 +1,18 @@
 package Basic;
 
 
-import javax.swing.*;
-import java.util.ArrayList;
-import java.util.Arrays;
-
 public class dd {
-    public static void main(String[] args) {
+    public static String main(String[] args) {
         String answer = "";
-        int [] numLog = {0, 1, 0, 10, 0, 1, 0, 10, 0, -1, -2, -1};
-        for (int i = 1; i <numLog.length ; i++) {
-            switch (numLog[i] - numLog[i-1]){
-                case 1 :
-                    answer+='w';
-                    break;
-                case  -1:
-                    answer+='s';
-                    break;
-                case +10:
-                    answer+='d';
-                    break;
-                case -10:
-                    answer+='a';
-                    break;
-                default:
-                    break;
-            }
+        String myString = "abcdevwxyz";
 
+        for (int i = 0; i <myString.length() ; i++) {
+            char ch = myString.charAt(i);
+            if (ch <'i') {
+                answer  +=i;
+        } else myString.charAt(i);
 
         }
-        System.out.println(answer);
-
+        return answer;
     }
-
-
 }
