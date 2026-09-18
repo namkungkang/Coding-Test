@@ -6,20 +6,12 @@ import java.util.Arrays;
 
 public class dd {
     public static void main(String[] args) {
-        int answer = 0;
-        int a = 3;
-        int d = 4;
-        boolean[] included = {true, false, false, true, true};
-
-        for (int i = 0; i <included.length ; i++) {
-            if (included[i] == true) {
-                answer += a + (d*i);
-            }
+        String answer = "";
+        String str1 = "aaaaa";
+        String str2 = "bbbbb";
+        for (int i = 0; i < str1.length(); i++) {
+            answer += str1.charAt(i) + String.valueOf(str2.charAt(i));
         }
 
-
         System.out.println(answer);
-
-
-    }
-}
+    }}
