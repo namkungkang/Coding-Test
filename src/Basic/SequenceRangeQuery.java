@@ -1,0 +1,18 @@
+package Basic;
+
+import java.util.Arrays;
+
+class SequenceRangeQuery {
+    public int[] SequenceRangeQuery(int[] arr, int[][] queries) {
+        for (int  i = 0; i < queries.length ; i++) {
+            int start = queries[i][0];
+            int end = queries[i][1];
+            for (int j = start; j <=end ; j++) {
+                arr[j] += 1;
+
+            }
+        }
+        return arr;
+
+    }
+}
