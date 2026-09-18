@@ -1,20 +1,17 @@
 package Basic;
 
-
 import java.util.Arrays;
 
-public class dd {
-    public static void main(String[] args) {
+class RemoveChar {
+    public String RemoveChar(String my_string, int[] indices) {
         StringBuilder sb = new StringBuilder("apporoograpemmemprs");
-
-        int[] indices = {1, 16, 6, 15, 0, 10, 11, 3};
+        String answer = "";
         Arrays.sort(indices);
         for (int i = indices.length - 1; i >= 0; i--) {
             sb.deleteCharAt(indices[i]);
 
-
-
         }
-        System.out.println(sb);
+        answer+=toString(sb);
+        return answer;
     }
 }
