@@ -11,7 +11,7 @@ class RemoveChar {
             sb.deleteCharAt(indices[i]);
 
         }
-        answer+=toString(sb);
+        answer+=sb.toString();
         return answer;
     }
 }

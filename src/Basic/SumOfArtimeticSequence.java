@@ -1,16 +1,11 @@
 package Basic;
 
-
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public class dd {
-    public static void main(String[] args) {
+class SumOfArtimeticSequence {
+    public int SumOfArtimeticSequence(int a, int d, boolean[] included) {
         int answer = 0;
-        int a = 3;
-        int d = 4;
-        boolean[] included = {true, false, false, true, true};
-
         for (int i = 0; i <included.length ; i++) {
             if (included[i] == true) {
                 answer += a + (d*i);
@@ -20,6 +15,6 @@ public class dd {
 
         System.out.println(answer);
 
-
+        return answer;
     }
 }
