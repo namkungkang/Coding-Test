@@ -6,12 +6,27 @@ import java.util.Arrays;
 
 public class dd {
     public static void main(String[] args) {
-        String answer = "";
-        String str1 = "aaaaa";
-        String str2 = "bbbbb";
-        for (int i = 0; i < str1.length(); i++) {
-            answer += str1.charAt(i) + String.valueOf(str2.charAt(i));
-        }
+        int[] answer = {};
+        boolean[] flag = {true, false, true, false, false};
+        int [] arr = {3, 2, 4, 1, 3};
 
-        System.out.println(answer);
-    }}
+        ArrayList<Integer> list = new ArrayList<>();
+
+        for (int i = 0; i <flag.length ; i++) {
+                if (flag[i] == true) {
+                    for (int j = 0; j <arr[i] * 2 ; j++) {
+                        list.add(arr[i]);
+
+                     }
+
+                }else {
+                    // 뒤에서 arr[i] 개 삭제
+                    int removeCount = arr[i];
+                    for (int j = 0; j < removeCount && !list.isEmpty(); j++) {
+                        list.remove(list.size() - 1);
+                    }
+                }
+
+        }
+        System.out.println(list);
+        }}
