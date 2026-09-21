@@ -6,20 +6,13 @@ import java.util.Arrays;
 
 public class dd {
     public static void main(String[] args) {
-    String [] Strs = {"0123456789","9876543210","9999999999999"};
-        int k = 50000;
-        int s = 5;
-        int l = 5;
-        ArrayList<Integer> list = new ArrayList<>();
-        for (int i = 0; i <Strs.length ; i++) {
-          list.add(Integer.parseInt(Strs[i].substring(s,s+l)));
-        }
-        for (int i = 0; i <list.toArray().length ; i++) {
-            if (list.get(i) < k) {
-                list.remove(i);
-            }
+        String strArr[] = {"a", "bc", "d", "efg", "hi"};
+        int size = 31;
+        int[] count = new int[size];
 
+        for (int i = 0; i <strArr.length ; i++) {
+            count[strArr[i].length()]++;
         }
-        System.out.println(list);
-
-    }}
+        System.out.println(Arrays.stream(count).max().getAsInt());
+    }
+}
