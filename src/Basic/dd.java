@@ -6,13 +6,17 @@ import java.util.Arrays;
 
 public class dd {
     public static void main(String[] args) {
-        String strArr[] = {"a", "bc", "d", "efg", "hi"};
-        int size = 31;
-        int[] count = new int[size];
+        ArrayList<String> list = new ArrayList<>();
 
-        for (int i = 0; i <strArr.length ; i++) {
-            count[strArr[i].length()]++;
-        }
-        System.out.println(Arrays.stream(count).max().getAsInt());
+        String myStr = "baconlettucetomato";
+       myStr= myStr.replace("a", " ");
+       myStr = myStr.replace("b", " ");
+        String [] answer = myStr.split(" ");
+
+
+        System.out.println(Arrays.toString(answer));
+
+
+
     }
 }
