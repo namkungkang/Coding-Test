@@ -6,17 +6,15 @@ import java.util.Arrays;
 
 public class dd {
     public static void main(String[] args) {
-        ArrayList<String> list = new ArrayList<>();
+    String myStr = "abcaa";
+    String pat = "ab";
+    int answer = 0;
 
-        String myStr = "baconlettucetomato";
-       myStr= myStr.replace("a", " ");
-       myStr = myStr.replace("b", " ");
-        String [] answer = myStr.split(" ");
-
-
-        System.out.println(Arrays.toString(answer));
-
-
-
+        for (int i = 0; i <myStr.length() ; i++) {
+            if (myStr.substring(i).startsWith(pat)) {
+                answer++;
+            }
+        }
+        System.out.println(answer);
     }
 }
