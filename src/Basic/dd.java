@@ -6,15 +6,11 @@ import java.util.Arrays;
 
 public class dd {
     public static void main(String[] args) {
-    String myStr = "abcaa";
-    String pat = "ab";
-    int answer = 0;
+        String myString = "AAAAaaaa";
+        String answer = "";
+        String pat = "a";
+        int index = myString.lastIndexOf(pat);
+        System.out.println(index);
 
-        for (int i = 0; i <myStr.length() ; i++) {
-            if (myStr.substring(i).startsWith(pat)) {
-                answer++;
-            }
-        }
-        System.out.println(answer);
-    }
-}
+        System.out.println(myString.substring(0, index+pat.length()));
+    }}
