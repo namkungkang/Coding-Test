@@ -6,11 +6,19 @@ import java.util.Arrays;
 
 public class dd {
     public static void main(String[] args) {
-        String myString = "AAAAaaaa";
-        String answer = "";
-        String pat = "a";
-        int index = myString.lastIndexOf(pat);
-        System.out.println(index);
+        String my_string = "Progra21Sremm3";
+       int s = 6;
+       int e = 12;
 
-        System.out.println(myString.substring(0, index+pat.length()));
-    }}
+       String part = my_string.substring(s,e+1);
+       StringBuilder lis = new StringBuilder(part).reverse();
+
+        System.out.println(  my_string.replace(part,lis));
+
+
+
+
+
+
+    }
+}
