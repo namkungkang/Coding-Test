@@ -6,17 +6,13 @@ import java.util.Arrays;
 
 public class dd {
     public static void main(String[] args) {
-        String my_string = "Progra21Sremm3";
-       int s = 6;
-       int e = 12;
-
-       String part = my_string.substring(s,e+1);
-       StringBuilder lis = new StringBuilder(part).reverse();
-
-        System.out.println(  my_string.replace(part,lis));
-
-
-
+        int[] arr = {0, 1, 2, 3, 4};
+        int[][] queries = {{0, 3}, {1, 2}, {1, 4}};
+        for (int i = 0; i  < queries.length ; i++) {
+            int n = arr[queries[i][0]]; // 0 1
+            arr[queries[i][0]] = arr[queries[i][1]]; //3 1 2 3 4
+            arr[queries[i][1]] = n; // 3 1 2 0 4
+        }
 
 
 
