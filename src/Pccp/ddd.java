@@ -1,23 +1,23 @@
 package Pccp;
 
-public class ddd {
-    public static void  main(String[] args) {
-        int health  = 30;
-        int [][] attacks = {{2,10},{9,15},{10,5},{11,5}};
-        int [] bandage = {5,1,5};
+import java.util.ArrayList;
+import java.util.Arrays;
 
-        for (int i = 0; i <attacks.length ; i++) {
-            for (int j = 0; j <attacks[i][0] ; j++) {
-                health = health - attacks[0][i];
+public class ddd {
+    public static void main(String[] args) {
+        String input_string = "edeaaabbccd";
+        int[] groupCount = new int[26];
+        for (int i = 0; i <input_string.length() ; i++) {
+            char current = input_string.charAt(i);
+            if ( i==0 || current!=input_string.charAt(i-1) ) {
+
             }
+
+
+
         }
 
 
-        System.out.println(health);
 
 
-
-
-
-    }
-}
+    }}
