@@ -3,7 +3,7 @@ package Pccp;
 import java.util.HashMap;
 import java.util.Map;
 
-class Solution {
+class UncompletedRunner {
     public String UncompletedRunner(String[] participant, String[] completion) {
         String answer = "";
 

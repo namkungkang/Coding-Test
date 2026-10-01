@@ -7,30 +7,39 @@ import java.util.Map;
 
 public class ddd {
     public static void main(String[] args) {
-        String[] participant = {"marina", "josipa", "nikola", "vinko", "filipa"};
-        String[] completion = {"josipa", "filipa", "marina", "nikola"};
+    String [] routes = {"E 2","S 2","W 1"};
+        int w = 0;
+        int h = 0;
+        String [] park = {"SOO","OOO","OOO"};
 
-        String[][] allRunner = {participant, completion};
-        Map<String, Integer> count = new HashMap<>();
+        int cw = park.length;
+        int ch = park[0].length();
 
-        for (int i = 0; i < allRunner.length; i++) {
-            String[] runner = allRunner[i];
-
-            for (int j = 0; j < runner.length; j++) {
-                String[] record = new String[]{runner[j]};
-                String cou = record[0];
-                String key = cou;
-                count.put(key, count.getOrDefault(key, 0) + 1);
-            }
-        }
-           String  answer= "";
-            for (String key : count.keySet()) {
-                if (count.get(key) > 0) {
-                    answer = key;
-                    break;
+        for (int i = 0; i <cw ; i++) {
+            for (int j = 0; j <ch ; j++) {
+                if (park[i].charAt(i)=='S') {
+                    w = i;
+                    h = i;
                 }
             }
-
-            System.out.println("완주하지 못한 선수: " + answer);
         }
+
+
+        for (int i = 0; i <routes.length ; i++) {
+            String[] route = routes[i].split(" ");
+            int distance = Integer.parseInt(route[1]);
+            char op = route[0].charAt(0);
+            int ds = distance;
+
+
+
+
+        }
+
+
+
+
+
+
     }
+}
