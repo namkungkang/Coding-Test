@@ -5,33 +5,42 @@ import java.util.ArrayList;
 
 public class dd {
     public static void main(String[] args) {
-        int[] arr = {1, 2, 1, 4, 5, 2, 9};
-        ArrayList<Integer> answer = new ArrayList<>();
-        int start = -1;
-        int end = 1;
+        ArrayList<Integer> list = new ArrayList<>();
+        int num1 = slicer[0];
+        int num2 =slicer[1];
 
-        for (int i = 0; i <arr.length ; i++) {
-            if (arr[i] == 2) {
-                start = i;
-                break;
-            }
+        switch (n) {
+            case 1 :
+                for (int i = 0; i <num_list.length; i++) {
+                    list.add(num_list[i]);
+                    break;
+                    return list;
+                }
+            case 2:
+                for (int i = num1; i < num_list.length ; i++) {
+                    list.add(num_list[i]);
+                    break;
+                    return list;
+                    case 3:
+                        for (int i = num1; i <num2+1; i++) {
+                            list.add(num_list[i]);
+                            break;
+                            return list;
+                        }
+                    case 4:
+                        for (int i = num1; i <num2+1; i+=slicer[2]) {
+                            list.add(num_list[i]);
+                            break;
+                            return list;
+
+
+                        }
+
+
+
+                }
+
+
+                return list ;
         }
-        for (int i = arr.length-1; i >- 1 ; i--) {
-            if (arr[i] == 2) {
-                end = i;
-                break;
-            }
-        }
-
-        if (start == -1 && end == 1) {
-            answer.add(-1);
-        }
-        else
-            for (int i = start; i <=end; i++) {
-            answer.add(arr[i]);
-        }
-
-
-        System.out.println(answer);
-    }}
-
+    }
