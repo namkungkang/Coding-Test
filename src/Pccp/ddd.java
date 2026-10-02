@@ -2,44 +2,35 @@ package Pccp;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.List;
+import java.util.Scanner;
 
 public class ddd {
     public static void main(String[] args) {
-    String [] routes = {"E 2","S 2","W 1"};
-        int w = 0;
-        int h = 0;
-        String [] park = {"SOO","OOO","OOO"};
 
-        int cw = park.length;
-        int ch = park[0].length();
+    int n = 20;
+    int a = 2;
+        int answer = 0;
 
-        for (int i = 0; i <cw ; i++) {
-            for (int j = 0; j <ch ; j++) {
-                if (park[i].charAt(i)=='S') {
-                    w = i;
-                    h = i;
-                }
-            }
+        if(a%2== 0) {
+            int first = n/a; //10
+            int second = (first + n%a )/a;
+            int third = (second + n%a) / a;
+            int four = (third+ n%a) /a;
+
+            int result = first + second + third +four +four +four;
         }
 
 
-        for (int i = 0; i <routes.length ; i++) {
-            String[] route = routes[i].split(" ");
-            int distance = Integer.parseInt(route[1]);
-            char op = route[0].charAt(0);
-            int ds = distance;
+        if (a%2==1) {
+            int first = n/a;
+            int second = (first + n%a )/a;
+            int third = (second + n%a) / a;
 
-
-
-
+            int result = first + second + third;
         }
-
-
-
-
 
 
     }
+
 }
