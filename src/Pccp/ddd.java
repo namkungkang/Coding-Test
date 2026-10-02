@@ -1,36 +1,22 @@
 package Pccp;
 
-import java.util.ArrayList;
+
 import java.util.Arrays;
-import java.util.List;
-import java.util.Scanner;
 
 public class ddd {
     public static void main(String[] args) {
-
-    int n = 20;
-    int a = 2;
-        int answer = 0;
-
-        if(a%2== 0) {
-            int first = n/a; //10
-            int second = (first + n%a )/a;
-            int third = (second + n%a) / a;
-            int four = (third+ n%a) /a;
-
-            int result = first + second + third +four +four +four;
+        String my_string = "cvsgiorszzzmrpaqpe";
+        String answer = "";
+        int [] index_list = {16, 6, 5, 3, 12, 14, 11, 11, 17, 12, 7};
+        for (int i = 0; i <index_list.length ; i++) {
+            int num = index_list[i];
+         answer+=my_string.charAt(num);
         }
+        System.out.println(answer);
 
 
-        if (a%2==1) {
-            int first = n/a;
-            int second = (first + n%a )/a;
-            int third = (second + n%a) / a;
 
-            int result = first + second + third;
-        }
 
 
     }
-
-}
+    }
