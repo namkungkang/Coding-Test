@@ -1,17 +1,11 @@
 package Basic;
 
-
 import java.util.ArrayList;
-import java.util.Arrays;
 
-public class dd {
-    public static void main(String[] args) {
-
-        String code = "qjnwezgrpirldywt";
+class QrCode {
+    public String QrCode(int q, int r, String code) {
         String [] answer1 = code.split("");
         ArrayList<String> list = new ArrayList<>();
-        int q= 3;
-        int r = 1;
 
         for (int i = 0; i <answer1.length ; i++) {
             if (i % q == r ) {
@@ -20,6 +14,7 @@ public class dd {
         }
         String answer = String.join("",list);
 
-        System.out.println(answer);
+     return answer;
     }
+
 }
