@@ -5,30 +5,24 @@ import java.util.ArrayList;
 
 public class dd {
     public static void main(String[] args) {
-        ArrayList<Integer> stk = new ArrayList<>();
-        int [] arr = {0, 1, 1, 0 };
-        ArrayList<Integer> stt = new ArrayList<>();
-        stt.add(-1);
-
-        for (int i = 0; i < arr.length; i++) {
-            if (stk.isEmpty()) {
-                stk.add(arr[i]);
-
-            } else if (stk.get(stk.size()-1) == arr[i]) {
-                stk.remove(stk.get(stk.size()-1));
-
-            } else if (stk.get(stk.size()-1) != arr[i]) {
-                stk.add(arr[i]);
-
+        String [] str_list = {"u", "u", "l", "r"};
+        ArrayList<String> answer = new ArrayList<>();
+        for (int i = 0; i <str_list.length ; i++) {
+            if (str_list[i].equals("l") ) {
+                for (int j = 0; j < i; j++) {
+                    answer.add(str_list[j]);
+                }
             }
 
-        }
-        if (stk.isEmpty()) {
-            System.out.println(stt);
+            if (str_list[i].equals("r")) {
+                for (int j = i + 1; j < str_list.length; j++) {
+                    answer.add(str_list[j]);
+                }
+            }
+
+
 
         }
-
-        System.out.println(stk);
+        System.out.println(answer);
     }
-
 }
