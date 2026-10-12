@@ -6,20 +6,24 @@ import java.util.Arrays;
 
 public class dd {
     public static void main(String[] args) {
+        int size = 52;
+        String my_string = "Programmers";
+        int [] answer = new int[size];
 
-        String code = "qjnwezgrpirldywt";
-        String [] answer1 = code.split("");
-        ArrayList<String> list = new ArrayList<>();
-        int q= 3;
-        int r = 1;
+        for (int i = 0; i <my_string.length() ; i++) {
+            if (my_string.length() == 3) {
 
-        for (int i = 0; i <answer1.length ; i++) {
-            if (i % q == r ) {
-                list.add(answer1[i]);
             }
-        }
-        String answer = String.join("",list);
 
-        System.out.println(answer);
+        }
+
+
+        System.out.println(Arrays.toString(answer));
+
+
+
+
+
+
     }
 }
