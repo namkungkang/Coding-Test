@@ -11,17 +11,18 @@ public class dd {
         int [] answer = new int[size];
 
         for (int i = 0; i <my_string.length() ; i++) {
-            if (my_string.length() == 3) {
-
+            Character c =  my_string.charAt(i);
+            if (Character.isUpperCase(c) ) {
+                answer[c-'A']++;
             }
+            else if (Character.isLowerCase(c)) {
+                answer[c-'a'+26]++;
+            }
+
 
         }
 
-
         System.out.println(Arrays.toString(answer));
-
-
-
 
 
 
