@@ -6,23 +6,16 @@ import java.util.Arrays;
 
 public class dd {
     public static void main(String[] args) {
-        int size = 52;
-        String my_string = "Programmers";
-        int [] answer = new int[size];
-
-        for (int i = 0; i <my_string.length() ; i++) {
-            Character c =  my_string.charAt(i);
-            if (Character.isUpperCase(c) ) {
-                answer[c-'A']++;
-            }
-            else if (Character.isLowerCase(c)) {
-                answer[c-'a'+26]++;
-            }
-
-
+        String  ineq = "<";
+        String eq = "=";
+        int n  = 20;
+        int m = 50;
+        int answer = 0;
+        if (n < m) {
+            System.out.println(1);
         }
-
-        System.out.println(Arrays.toString(answer));
+        else
+            System.out.println(0);
 
 
 
