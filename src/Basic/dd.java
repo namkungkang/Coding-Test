@@ -1,41 +1,23 @@
 package Basic;
 
 
+import java.lang.reflect.Type;
+import java.math.BigInteger;
 import java.util.ArrayList;
 import java.util.Arrays;
 
 public class dd {
     public static void main(String[] args) {
-    int [] arr = {1,4,2,5,3};
-    ArrayList<Integer> stk = new ArrayList<>();
-        for (int i = 0; i <arr.length ; i++) {
-            if (i < arr.length) {
-                if (stk.isEmpty()) {
-                    stk.add(arr[i]);
-                    System.out.println(stk);
-                } else if (stk.get(stk.size()-1) <arr[i] ) {
-                    stk.add(arr[i]);
-                    System.out.println(stk);
-                } else if (stk.get(stk.size()-1) >=arr[i]) {
-                    stk.remove(stk.size()-1);
-                    i--;
-                    System.out.println(stk);
-                }
+        String a = "18446744073709551615";
+        String b = "287346502836570928366";
 
+        BigInteger aa = new BigInteger(a);
+        BigInteger bb = new BigInteger(b);
 
-            }
-        }
-        System.out.println(stk);
-
-
-
-
-
-
-
-
+        System.out.println(aa.add(bb));
 
 
 
     }
+
 }
