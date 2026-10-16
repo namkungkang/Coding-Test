@@ -8,16 +8,38 @@ import java.util.Arrays;
 
 public class dd {
     public static void main(String[] args) {
-        String a = "18446744073709551615";
-        String b = "287346502836570928366";
-
-        BigInteger aa = new BigInteger(a);
-        BigInteger bb = new BigInteger(b);
-
-        System.out.println(aa.add(bb));
+        ArrayList<Integer> answer = new ArrayList<>();
+        int [] arr = {0,1,2,4,3};
+        int [][] queries = {{0,4,2},{0,3,2},{0,2,2}};
 
 
+        for (int i = 0; i <queries.length ; i++) {
+            int min = 9999;
+            int s = queries[i][0];
+            int e = queries[i][1];
+            int k = queries[i][2];
 
-    }
 
+
+            for (int j = s; j <=e ; j++) {
+                if (arr[j] > k ) {
+                    min = arr[j];
+                }
+
+            }
+
+            if (min == 9999) {
+                answer.add(-1);
+            }
+            else answer.add(min);
+
+
+
+
+
+
+        }
+
+
+        System.out.println(answer);    }
 }
