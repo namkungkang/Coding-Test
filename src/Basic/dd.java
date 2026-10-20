@@ -2,23 +2,29 @@ package Basic;
 
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class dd {
-    public static ArrayList<Integer> main(String[] args) {
-        int k =3;
-        int [] arr = {0, 1, 1, 2, 2, 3};
-        ArrayList<Integer> list = new ArrayList<>();
-        for (int i = 0; i <arr.length ; i++) {
-            if (list.size()==k) {
-                break;
-            } else if (list.contains(arr[i])) {
-                list.add(arr[i]);
+    public static void main(String[] args) {
+
+//      String [] picture = {".xx...xx.", "x..x.x..x", "x...x...x", ".x.....x.", "..x...x..", "...x.x...", "....x...."};
+//        int k = 2;
+
+          String [] answer = {"abc"};
+          String[] result = new String[answer.length * 2];
+          int index = 0;
+
+        for (int i = 0; i <answer.length ; i++) {
+            String str = "";
+            for (int j = 0; j <answer[i].length() ; j++) {
+                str+=String.valueOf(answer[i].charAt(j)).repeat(2);
             }
+            answer[index++] = str;
+            System.out.println(Arrays.toString(answer));
         }
-        while (list.size()!=k) {
-            list.add(-1);
-        }
-        return list;
+
+
+
 
     }
 }
