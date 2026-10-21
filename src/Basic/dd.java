@@ -7,24 +7,21 @@ import java.util.Arrays;
 public class dd {
     public static void main(String[] args) {
 
-//      String [] picture = {".xx...xx.", "x..x.x..x", "x...x...x", ".x.....x.", "..x...x..", "...x.x...", "....x...."};
-//        int k = 2;
-
-          String [] answer = {"abc"};
-          String[] result = new String[answer.length * 2];
-          int index = 0;
-
-        for (int i = 0; i <answer.length ; i++) {
-            String str = "";
-            for (int j = 0; j <answer[i].length() ; j++) {
-                str+=String.valueOf(answer[i].charAt(j)).repeat(2);
-            }
-            answer[index++] = str;
-            System.out.println(Arrays.toString(answer));
+        String answer = "";
+        int s  = 2;
+        String myString = "He11oWor1d";
+        String overwrite_string = "lloWorl";
+        for (int i = 0; i <s ; i++) {
+            answer+=myString.charAt(i);
+        }
+        for (int i = 0; i <overwrite_string.length() ; i++) {
+            answer+=overwrite_string.charAt(i);
+        }
+        for (int i =  overwrite_string.length()+s; i <myString.length() ; i++) {
+            answer+=myString.charAt(i);
         }
 
-
-
+        System.out.println(answer);
 
     }
 }
