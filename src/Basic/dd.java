@@ -6,22 +6,30 @@ import java.util.Arrays;
 
 public class dd {
     public static void main(String[] args) {
+        int[][] arr = {
 
-        String answer = "";
-        int s  = 2;
-        String myString = "He11oWor1d";
-        String overwrite_string = "lloWorl";
-        for (int i = 0; i <s ; i++) {
-            answer+=myString.charAt(i);
-        }
-        for (int i = 0; i <overwrite_string.length() ; i++) {
-            answer+=overwrite_string.charAt(i);
-        }
-        for (int i =  overwrite_string.length()+s; i <myString.length() ; i++) {
-            answer+=myString.charAt(i);
-        }
+                {566, 222, 444},
 
-        System.out.println(answer);
+                {232, 545, 211},
 
-    }
-}
+                {267, 454, 867},
+
+                {766, 864, 454}
+
+        };
+                int row = arr.length;
+                int col = arr[0].length;
+
+                int size = Math.max(row, col);
+
+                int[][] answer = new int[size][size];
+
+                for (int i = 0; i < row; i++) {
+                    for (int j = 0; j < col; j++) {
+                        answer[i][j] = arr[i][j];
+                    }
+                }
+
+        System.out.println(Arrays.toString(answer));
+            }
+        }
