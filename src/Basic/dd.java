@@ -1,52 +1,43 @@
 package Basic;
 
-
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collection;
-import java.util.Collections;
 
 public class dd {
     public static void main(String[] args) {
-    int[] rang = {3, 7, 2, 5, 4, 6, 1};
-    boolean[] attendance = {false, true, true, true, true, false, false};
-    ArrayList<Integer> rank = new ArrayList<>();
+        int l = 10;
+        int r = 20;
 
-        for (int i = 0; i <rang.length ; i++) {
-            if (attendance[i] == true ) {
-                rank.add(rang[i]);
+        ArrayList<Integer> list = new ArrayList<>();
+        ArrayList<Integer> list2 = new ArrayList<>();
 
-            }
-        }
-        Collections.sort(rank);
+        for(int i = l; i<=r; i++) {
+            String str = String.valueOf(i);
+            boolean check = true;
 
-        int a = 0, b=0 , c =0;
 
-        for (int i = 0; i < rang.length; i++) {
+            for (int j=0; j<str.length(); j++) {
+                if(str.charAt(j) != '0' && str.charAt(j) !='5') {
+                    check = false;
+                    break;
+                }
 
-            if (rang[i] == rank.get(0)) {
-
-                a = i;
 
             }
+            if (check) {
 
-            if (rang[i] == rank.get(1)) {
-
-                b = i;
-
+                list.add(i);
+                System.out.println(list);
             }
 
-            if (rang[i] == rank.get(2)) {
-
-                c = i;
-
-            }
 
         }
-        int result = 10000 * a + 100 * b + c;
-
-        System.out.println(result);
+        if(list.isEmpty()) {
+            list2.add(-1);
 
         }
+
+        System.out.println(list2);
 
     }
+}
