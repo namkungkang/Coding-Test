@@ -5,39 +5,41 @@ import java.util.Arrays;
 
 public class dd {
     public static void main(String[] args) {
-        int l = 10;
-        int r = 20;
+        int[] arr = {0, 1, 2, 3, 4, 5};
+        int[] query = {4,1,2};
 
         ArrayList<Integer> list = new ArrayList<>();
-        ArrayList<Integer> list2 = new ArrayList<>();
+        for (int i = 0; i < arr.length; i++) {
 
-        for(int i = l; i<=r; i++) {
-            String str = String.valueOf(i);
-            boolean check = true;
+            list.add(arr[i]);
 
+        }
 
-            for (int j=0; j<str.length(); j++) {
-                if(str.charAt(j) != '0' && str.charAt(j) !='5') {
-                    check = false;
-                    break;
+        for (int j = 0; j < query.length; j++) {
+
+            if (j % 2 == 0) {
+
+                for (int i = list.size() - 1; i > query[j]; i--) {
+
+                    list.remove(i);
+
                 }
 
+            } else {
+
+                for (int i = 0; i < query[j]; i++) {
+
+                    list.remove(0);
+
+                }
 
             }
-            if (check) {
 
-                list.add(i);
-                System.out.println(list);
-            }
 
 
         }
-        if(list.isEmpty()) {
-            list2.add(-1);
 
-        }
-
-        System.out.println(list2);
 
     }
+
 }
