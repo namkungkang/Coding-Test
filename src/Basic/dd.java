@@ -5,41 +5,24 @@ import java.util.Arrays;
 
 public class dd {
     public static void main(String[] args) {
-        int[] arr = {0, 1, 2, 3, 4, 5};
-        int[] query = {4,1,2};
+        String answer = "";
+        String code = "abc1abc1abc";
+        int mode = 0;
 
-        ArrayList<Integer> list = new ArrayList<>();
-        for (int i = 0; i < arr.length; i++) {
-
-            list.add(arr[i]);
-
-        }
-
-        for (int j = 0; j < query.length; j++) {
-
-            if (j % 2 == 0) {
-
-                for (int i = list.size() - 1; i > query[j]; i--) {
-
-                    list.remove(i);
-
-                }
-
-            } else {
-
-                for (int i = 0; i < query[j]; i++) {
-
-                    list.remove(0);
-
-                }
-
+        for (int i = 0; i < code.length(); i++) {
+            if (code.charAt(i) == '1') {
+                mode = 1 - mode;
+                continue;
             }
-
-
-
+            if (mode == 0) {
+                if (i % 2 == 0)
+                    answer += code.charAt(i);
+            } else if (i % 2 == 1) {
+                answer += code.charAt(i);
+            }
         }
-
-
-    }
-
-}
+        if (answer.isEmpty()) {
+            answer+="EMPTY";
+        }
+        System.out.println(answer);
+    }}
